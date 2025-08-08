@@ -289,9 +289,9 @@ body {
 
 .shop-artifacts, .shop-replicas {
   background: linear-gradient(to right, #f0f4f8, #2c497aa6);
-  margin: 1.5rem auto;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1rem;
   border-radius: 8px;
   max-width: 1300px;
@@ -320,13 +320,25 @@ body {
   position: relative;
   text-align: center;
   max-width: 21%;
-  min-height: 660px;
+  min-height: 690px;
   height: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
+}
+
+.souvenir-item figure {
+  margin: 0;
+  padding: 0;
+}
+
+.souvenir-item figure figcaption {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.2rem;
+  text-align: center;
 }
 
 .souvenir-item img {
@@ -336,6 +348,7 @@ body {
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .souvenir-item button {
   margin-top: auto;
