@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #ebeaea;
   color: #222;
 }
 
@@ -209,4 +209,100 @@ body {
 
 .collections-buttons button:hover {
   background-color: #092f6d;
+}
+
+#archaeology, #anthropology, #assemblages {
+  background: linear-gradient(to right, #f0f4f8, #2c497aa6);
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 1000px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#archaeology h1, #anthropology h1, #assemblages h1 {
+  text-align: center;
+  color: #2c497a;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+details {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  padding: 0.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+details[open] {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #0b3d91;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+summary::marker,
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::after {
+  content: "▼";
+  font-size: 0.9rem;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+.artifact-content {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.artifact-content img {
+  max-width: 350px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.artifact-content figure figcaption {
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+.artifact-text {
+  flex: 1;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem 1.5rem;
+}
+
+.artifact-text p {
+  margin: 0;
+}
+
+.artifact-text strong {
+  color: #000000;
 }
