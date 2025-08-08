@@ -220,89 +220,67 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-#archaeology h2, #anthropology h2, #assemblages h2 {
-  text-align: center;
+#archaeology h1, #anthropology h1, #assemblages h1 {
+  text-align: left;
   color: #2c497a;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
-details {
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-  background-color: #f9f9f9;
-  padding: 0.5rem;
-  transition: box-shadow 0.3s ease;
-}
-
-details[open] {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-}
-
-summary {
-  font-weight: bold;
-  font-size: 1.2rem;
-  cursor: pointer;
+#archaeology h2, #anthropology h2, #assemblages h2 {
+  text-align: center;
   color: #0b3d91;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
-summary::marker,
-summary::-webkit-details-marker {
-  display: none;
+.collection-item {
+  background-color: #ffffffd9;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
 }
 
-details summary::after {
-  content: "▼";
-  font-size: 0.9rem;
-  margin-left: 10px;
-  transition: transform 0.2s ease;
+.collection-item figure {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-details[open] summary::after {
-  transform: rotate(-180deg);
-}
-
-.artifact-content {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.artifact-content img {
-  max-width: 350px;
+.collection-item img {
+  max-width: 30%;
   height: auto;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.artifact-content figure figcaption {
+.collection-item figcaption {
   font-size: 0.8rem;
   color: #666;
   font-style: italic;
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
   text-align: center;
 }
 
-.artifact-text {
-  flex: 1;
-  min-width: 300px;
+/* Grouped fields */
+.field-group {
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.8rem 1.5rem;
 }
 
-.artifact-text p {
+.field-group p {
   margin: 0;
 }
 
-.artifact-text strong {
+.field-group strong {
   color: #000000;
+}
+
+@media (max-width: 700px) {
+  .field-group {
+    grid-template-columns: 1fr;
+  }
 }
