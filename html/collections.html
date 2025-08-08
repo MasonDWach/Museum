@@ -5,7 +5,7 @@
   <title>The Preglacial Archive</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -252,6 +252,12 @@
       <p>AI-generated code was used to apply human-generated HTML structure for artifact section layout to all artifact sections.</p>
   </footer>
 
-<script src="../js/javascript.js"></script>
+<script>
+  function showSection(section) {
+    const sections = document.querySelectorAll('.collection-section');
+    sections.forEach(s => s.style.display = 'none');
+    document.getElementById(section).style.display = 'block';
+  }
+</script>
 </body>
 </html>
