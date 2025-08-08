@@ -220,7 +220,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-#archaeology h1, #anthropology h1, #assemblages h1 {
+#archaeology h2, #anthropology h2, #assemblages h2 {
   text-align: center;
   color: #2c497a;
   margin-bottom: 1rem;
