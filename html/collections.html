@@ -271,6 +271,7 @@
 
       <p class="display-courtesy">On display courtesy of the Nunavut Archaeological Preservation Society and the Inuit Circumpolar Council. This display includes a tactile reproduction so visitors can appreciate the craftsmanship of the mask while the original—preserved in a humidity-controlled case—remains protected for future generations.</p>
     </div>
+    <button onclick="showSection('archaeology'); window.scrollTo({ top: 0});">Back to collections</button>
   </div>
 
   <div class="history">
@@ -297,6 +298,7 @@
 
       <p class="display-courtesy">On display courtesy of the Greenland National Museum and Archives. For conservation reasons, the original Tessellated Ice Lens is kept under cryogenic storage, but this exhibition includes a 3D-printed resin replica. By holding the replica to the light, visitors can glimpse the dazzling refractions that once danced across Ice Age ceremonial spaces.</p>
     </div>
+    <button onclick="showSection('archaeology'); window.scrollTo({ top: 0});">Back to collections</button>
   </div>
 
   <div class="history">
@@ -325,6 +327,7 @@
 
       <p class="display-courtesy">On display courtesy of the Marine Archaeology Consortium and the Labrador Heritage Foundation. This keystone stands not simply as an engineering marvel, but as a silent witness to a vanished maritime civilization whose ingenuity rivaled that of later, better-documented societies.</p>
     </div>
+    <button onclick="showSection('archaeology'); window.scrollTo({ top: 0});">Back to collections</button>
   </div>
 
   <div class="history">
@@ -351,6 +354,7 @@
 
       <p class="display-courtesy">On display courtesy of the Siberian Permafrost Research Institute and the Yakutia Cultural Heritage Foundation. Though small in scale, this artifact demonstrates that the human body was more than flesh—it was a living canvas of belief, power, and story.</p>
     </div>
+    <button onclick="showSection('anthropology'); window.scrollTo({ top: 0});">Back to collections</button>
   </div>
 
   <div class="history">
@@ -377,6 +381,7 @@
 
       <p class="display-courtesy">On display courtesy of the Russian Academy of Sciences and the Evenki Cultural Preservation Society. This pelt reveals how ancient societies may have inscribed meaning directly onto the materials of their world.</p>
     </div>
+    <button onclick="showSection('anthropology'); window.scrollTo({ top: 0});">Back to collections</button>
   </div>
 
   <div class="history">
@@ -406,11 +411,12 @@
 
       <p class="display-courtesy">On display courtesy of the Icelandic Heritage Museum and the Nordic Archaeological Foundation. In display, the specimen is paired with interactive overlays that simulate nerve regeneration and stress distribution across the reconstructed spine.</p>
     </div>
+    <button onclick="showSection('anthropology'); window.scrollTo({ top: 0});">Back to collections</button>
   </div>
 </section>
 
 <div class="modal-item" id="modal-text-lens" hidden>
-  <h2 id="modal-title">Tesselated Ice Lens — Collection Note</h2>
+  <h2 id="modal-lens">Tesselated Ice Lens — Collection Note</h2>
   <p>
     Discovered 3.2 km beneath the Jakobshavn Glacier, this silica-crystal lens embedded with copper-gold nanofilaments represents a startlingly advanced optical device from the Last Glacial Maximum. When illuminated, its refracted light projects geometric constellations, suggesting use as a celestial navigation tool or ritual observational instrument. The uncorroded filaments, arranged in precise patterns resembling nanoscale circuitry, imply a sophisticated understanding of materials science—possibly exploiting Greenland’s rare native copper deposits.
     <br>
@@ -422,7 +428,7 @@
   </p>
 </div>
 
-<div class="modal-item" id="modal-text-mask" hidden>
+<div class="modal-mask" id="modal-text-mask" hidden>
   <h2 id="modal-title">Obsidian Ritual Mask of Surnaq — Collection Note</h2>
   <p>
     Recovered from an ice-sealed Nunavut cave, this mirror-polished obsidian mask embodies the spiritual ingenuity of the proto-Arctic Surnaq people. Its geometric etchings, inlaid with mammoth bone and mother-of-pearl, refract light in patterns identical to the Tessellated Ice Lens—suggesting a shared "optics-based" ritual system spanning 2,500 km of Ice Age tundra. The mask’s lack of wear implies it was ceremonially significant but rarely worn, perhaps reserved for solstice rites or vision quests.
@@ -439,7 +445,7 @@
 </div>
 
 <div class="modal-item" id="modal-text-keystone" hidden>
-  <h2 id="modal-title">Copper-Reinforced Structural Keystone — Collection Note</h2>
+  <h2 id="modal-keystone">Copper-Reinforced Structural Keystone — Collection Note</h2>
   <p>
     This remarkably preserved architectural element, recovered from the Labrador Sea at a depth of 120 meters, challenges conventional timelines of pre-Columbian engineering. The sedimentary limestone core, reinforced with copper alloy bands and pitch-based adhesive, exhibits unusually advanced anti-corrosive properties—suggesting either a lost metallurgical technique or possible material sourcing from an as-yet-unidentified deposit. X-ray tomography revealed precise geometric grooving on interior surfaces, likely serving as alignment markers for large-scale construction.
     <br>
@@ -452,7 +458,7 @@
 </div>
 
 <div class="modal-item" id="modal-text-pelt" hidden>
-  <h2 id="modal-title">Irradiated Mammoth Carcass Pelt — Collection Note</h2>
+  <h2 id="modal-pelt">Irradiated Mammoth Carcass Pelt — Collection Note</h2>
   <p>
     This partially preserved mammoth hide, discovered in East Antarctica’s glacial shelves, bears intricate spiral and radial burn patterns that eerily echo the Tattooed Dermal Patch from Siberia. The pelt emits low-level gamma radiation of unknown origin—a phenomenon that has resisted replication in modern labs. Laser inscription mapping confirms the markings were deliberately scorched, possibly in a ritualistic or astronomical context.
     <br>
@@ -465,7 +471,7 @@
 </div>
 
 <div class="modal-item" id="modal-text-tattoo" hidden>
-  <h2 id="modal-title">Tattooed Dermal Patch — Collection Note</h2>
+  <h2 id="modal-tattoo">Tattooed Dermal Patch — Collection Note</h2>
   <p>
     This rare fragment of human epidermal and dermal tissue preserves a multilayered lattice of metallic and plant-based inks, faintly fluorescent under infrared and near-UV light. Excavated from a permafrost-sealed burial chamber along the Kara Sea, its anaerobic and sub-zero context (-12°C) has maintained remarkable structural integrity, revealing interlaced spiral nodes and animal glyphs. These motifs correspond closely to markings on the Irradiated Mammoth Pelt and obsidian blade handles recovered from the same region, suggesting a shared symbolic language within what researchers hypothesize as a Boreal Shamanic Network across northern glacial territories.
     <br>
@@ -478,7 +484,7 @@
 </div>
 
 <div class="modal-item" id="modal-text-spine" hidden>
-  <h2 id="modal-title">Ossified Spinal Reconstruction — Collection Note</h2>
+  <h2 id="modal-spine">Ossified Spinal Reconstruction — Collection Note</h2>
   <p>
     Discovered in a subglacial trench beneath Vatnajökull, this fused spinal column (C3-T5) provides startling evidence of advanced surgical intervention in a glacial-era individual. Micro-CT scans reveal engineered mineral deposits resembling synthetic apatite, a material not naturally occurring in the region. Histological analysis indicates the subject survived for decades post-surgery, with bone growth suggesting guided ossification techniques.
     <br>

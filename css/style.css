@@ -234,6 +234,17 @@ body {
   font-size: 1.5rem;
 }
 
+#histories button{
+  background-color: #ffffff00;
+  color: #0b3d91;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+#histories button:hover{
+  color: #d4a00f;
+}
+
 .collection-item {
   background-color: #ffffffd9;
   border: 1px solid #d1d9e6;
