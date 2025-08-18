@@ -26,7 +26,7 @@
     <button onclick="showSection('archaeology')">Archaeology</button>
     <button onclick="showSection('anthropology')">Anthropology</button>
     <button onclick="showSection('assemblages')">Assemblages</button>
-    <button onclick="location.href='html/collections.html'">Histories</button>
+    <button onclick="showSection('histories')">Histories</button>
   </div>
 
 <!-- AI was used to apply the HTML structure to all the artifact sections. I gave a sample of the structure then told ChatGPT to copy it for every artifact.-->
@@ -38,8 +38,8 @@
   <div class="collection-item">
     <h2>Tesselated Ice Lens</h2>
     <figure>
-      <img src="../images/collections/tessellated-ice-lens.png" alt="Tessellated Ice Lens">
-      <figcaption>Image and text generated with AI (OpenAI 2025).</figcaption>
+      <img src="../images/collections/tessellated-ice-lens.png" alt="Tessellated Ice Lens" class="open-modal" data-modal-target="#modal-text-lens">
+      <figcaption>Image and text generated with AI (OpenAI 2025).<br>Click Image for more info!</figcaption>
     </figure>
     <div class="field-group">
       <p><strong>Name:</strong> Tessellated Ice Lens</p>
@@ -66,8 +66,8 @@
   <div class="collection-item">
     <h2>Obsidian Ritual Mask of Surnaq</h2>
     <figure>
-      <img src="../images/collections/obsidian-ritual-mask.png" alt="Obsidian Ritual Mask of Surnaq">
-      <figcaption>Image and text generated with AI (OpenAI 2025).</figcaption>
+      <img src="../images/collections/obsidian-ritual-mask.png" alt="Obsidian Ritual Mask of Surnaq" class="open-modal" data-modal-target="#modal-text-mask">
+      <figcaption>Image and text generated with AI (OpenAI 2025).<br>Click Image for more info!</figcaption>
     </figure>
     <div class="field-group">
       <p><strong>Name:</strong> Obsidian Ritual Mask of Surnaq</p>
@@ -94,8 +94,8 @@
   <div class="collection-item">
     <h2>Copper-Reinforced Structural Keystone</h2>
     <figure>
-      <img src="../images/collections/copper-reinforced-keystone.png" alt="Copper-Reinforced Structural Keystone">
-      <figcaption>Image and text generated with AI (OpenAI 2025).</figcaption>
+      <img src="../images/collections/copper-reinforced-keystone.png" alt="Copper-Reinforced Structural Keystone" class="open-modal" data-modal-target="#modal-text-keystone">
+      <figcaption>Image and text generated with AI (OpenAI 2025).<br>Click Image for more info!</figcaption>
     </figure>
     <div class="field-group">
       <p><strong>Name:</strong> Copper-Reinforced Structural Keystone</p>
@@ -128,8 +128,8 @@
   <div class="collection-item">
     <h2>Tattooed Dermal Patch</h2>
     <figure>
-      <img src="../images/collections/tattooed-dermal-patch.png" alt="Tattooed Dermal Patch">
-      <figcaption>Image and text generated with AI (OpenAI 2025).</figcaption>
+      <img src="../images/collections/tattooed-dermal-patch.png" alt="Tattooed Dermal Patch" class="open-modal" data-modal-target="#modal-text-tattoo">
+      <figcaption>Image and text generated with AI (OpenAI 2025).<br>Click Image for more info!</figcaption>
     </figure>
     <div class="field-group">
       <p><strong>Name:</strong> Tattooed Dermal Patch</p>
@@ -156,8 +156,8 @@
   <div class="collection-item">
     <h2>Irradiated Mammoth Carcass Pelt</h2>
     <figure>
-      <img src="../images/collections/irradiated-mammoth-pelt.png" alt="Irradiated Mammoth Carcass Pelt">
-      <figcaption>Image and text generated with AI (Google, OpenAI 2025).</figcaption>
+      <img src="../images/collections/irradiated-mammoth-pelt.png" alt="Irradiated Mammoth Carcass Pelt" class="open-modal" data-modal-target="#modal-text-pelt">
+      <figcaption>Image and text generated with AI (Google, OpenAI 2025).<br>Click Image for more info!</figcaption>
     </figure>
     <div class="field-group">
       <p><strong>Name:</strong> Irradiated Mammoth Carcass Pelt</p>
@@ -184,8 +184,8 @@
   <div class="collection-item">
     <h2>Ossified Spinal Reconstruction</h2>
     <figure>
-      <img src="../images/collections/ossified-spinal-reconstruction.png" alt="Ossified Spinal Reconstruction">
-      <figcaption>Image and text generated with AI (Google, OpenAI 2025).</figcaption>
+      <img src="../images/collections/ossified-spinal-reconstruction.png" alt="Ossified Spinal Reconstruction" class="open-modal" data-modal-target="#modal-text-spine">
+      <figcaption>Image and text generated with AI (Google, OpenAI 2025).<br>Click Image for more info!</figcaption>
     </figure>
     <div class="field-group">
       <p><strong>Name:</strong> Ossified Spinal Reconstruction</p>
@@ -244,8 +244,260 @@
 
 </section>
 
-  </main>
+<section id="histories" class="collection-section" style="display:none;">
+  <h1>Histories</h1>
+  
+  <div class="history">
+    <h2>Obsidian Ritual Mask of Surnaq (PA-AR-002)</h2>
+    <figure>
+      <img src="../images/collections/obsidian-ritual-mask.png" alt="Obsidian Ritual Mask of Surnaq">
+      <figcaption>Image and text generated with AI (Google, OpenAI 2025).</figcaption>
+    </figure>
+    <div class="artifact-description">
+      <h3>Facts</h3>
+      <p>Discovered in an ice-sealed cave near Surnaq Fjord, Nunavut, the Obsidian Ritual Mask of Surnaq provides a rare glimpse into the symbolic and ceremonial life of Arctic peoples during the Last Glacial Maximum, around 22,500–22,000 years ago. Carved from volcanic obsidian—a material prized for its sharpness and reflective qualities—and carefully inlaid with mammoth bone and mother-of-pearl, the mask is among the most sophisticated examples of Ice Age stone craftsmanship.</p>
+      <p>Archaeologists found the mask placed in a ceremonial niche alongside human remains and cave paintings. Minor wear inside the strapping holes suggests the mask was occasionally worn, but its near-perfect preservation implies careful, reverent handling.</p>
 
+      <h3>Interpretation</h3>
+      <p>Its polished black surface, capable of catching and reflecting flickering firelight, would have produced a mesmerizing, almost otherworldly effect in ceremonial settings. The reflective obsidian surface may have been used as a spiritual portal, allowing shamans or ceremonial leaders to "see" into other realms. The etched geometric motifs mirror known celestial patterns, possibly representing an early attempt to align human experience with cosmic forces.</p>
+      <p>Microscopic analysis reveals the extraordinary skill of its makers. The mask's geometric etchings, carved through careful pecking and polishing, achieve a level of precision that seems impossible with only stone tools. The mother-of-pearl inlays, likely harvested from Arctic mollusk shells, create light-refracting designs that seem to shimmer in motion.</p>
+
+      <h3>Comparative Notes</h3>
+      <p>Remarkably, these patterns align with optical motifs seen in the Tessellated Ice Lens discovered in Greenland, suggesting that different Arctic communities may have shared cosmological knowledge despite being separated by vast distances of tundra and sea ice.</p>
+      <p>Consultation with Inuit elders during research revealed striking resonances. Several noted similarities between the mask's etched motifs and traditional stories about the aurora borealis, in which dancing lights in the sky were seen as spirits or ancestors. This continuity suggests deep, enduring symbolic traditions in the circumpolar world.</p>
+
+      <h3>Cautionary Note on Interpretation</h3>
+      <p>While the ceremonial context and craftsmanship are evident, the exact ritual significance remains speculative. Modern interpretations through consultation with Indigenous communities provide valuable perspectives, but we must acknowledge these as contemporary readings of ancient symbolism whose original meanings may be fundamentally inaccessible to us.</p>
+
+      <p class="display-courtesy">On display courtesy of the Nunavut Archaeological Preservation Society and the Inuit Circumpolar Council. This display includes a tactile reproduction so visitors can appreciate the craftsmanship of the mask while the original—preserved in a humidity-controlled case—remains protected for future generations.</p>
+    </div>
+  </div>
+
+  <div class="history">
+    <h2>Tessellated Ice Lens (PA-AR-001)</h2>
+    <figure>
+      <img src="../images/collections/tessellated-ice-lens.png" alt="Tessellated Ice Lens">
+      <figcaption>Image and text generated with AI (Google, OpenAI 2025).</figcaption>
+    </figure>
+    <div class="artifact-description">
+      <h3>Facts</h3>
+      <p>The Tessellated Ice Lens, recovered from beneath 2.3 kilometers of Greenlandic ice near Jakobshavn Glacier, is one of the most enigmatic artifacts preserved in The Subglacial Archive. At first glance, it appears to be a fractured slab of clear glacial ice. But when illuminated, intricate geometric tessellations ripple across its surface, refracting light into complex repeating forms.</p>
+      <p>Microscopic study has revealed that these motifs were intentionally etched into the ice with a stone or bone implement before the lens was frozen into its final resting place. Dating to approximately 24,000 years ago, the lens is both fragile and extraordinary. Ice, by its very nature, rarely survives human modification over long spans of time. The fact that this piece remained intact suggests that it was deliberately buried in an ice cavern, sealed off from melting or erosion.</p>
+
+      <h3>Interpretation</h3>
+      <p>The tessellated designs etched into the lens form repeating interlocking triangles and hexagons, shapes strongly reminiscent of both crystalline structures and astronomical constellations. The precision of these forms suggests advanced observational knowledge. Some researchers believe the lens may have functioned as an astronomical teaching tool, reflecting celestial patterns for initiates or apprentices. Others propose a ritual function: when held near a fire, the ice refracted and scattered light across cave walls, transforming geometric etchings into shimmering constellations.</p>
+      <p>Its survival offers us a unique glimpse into the rare use of ice itself as a medium of human expression. To contemporary viewers, the lens embodies a profound paradox: it is both delicate and enduring, ephemeral and eternal. Carved from the very medium that defined Ice Age life, it invites us to consider how ancient humans saw themselves not only as survivors of harsh environments but also as interpreters of its mysteries.</p>
+
+      <h3>Comparative Notes</h3>
+      <p>The lens demonstrates clear symbolic parallels with other artifacts in the collection. Its tessellated patterns closely resemble those inscribed on the Obsidian Ritual Mask of Surnaq, suggesting a shared symbolic repertoire across Arctic peoples separated by vast distances. The convergence of these motifs implies the existence of long-distance cultural transmission networks during the Last Glacial Maximum—whether through migration, trade, or shared cosmological traditions.</p>
+      <p>For Indigenous Arctic communities today, the Tessellated Ice Lens carries resonances with stories of frozen mirrors and windows to other worlds. Inuit collaborators working with the Archive have noted parallels to tales of silaup aullaqtuq—"the weather going away"—in which ice and sky interconnect to reveal ancestral messages.</p>
+
+      <h3>Cautionary Note on Interpretation</h3>
+      <p>While the intentional craftsmanship is evident, we must be cautious about ascribing specific meanings to the geometric patterns. The multiple modern interpretations (astronomical tool, ritual object, teaching device) demonstrate how a single artifact can inspire diverse readings, all of which may contain elements of truth while potentially missing the original cultural context.</p>
+
+      <p class="display-courtesy">On display courtesy of the Greenland National Museum and Archives. For conservation reasons, the original Tessellated Ice Lens is kept under cryogenic storage, but this exhibition includes a 3D-printed resin replica. By holding the replica to the light, visitors can glimpse the dazzling refractions that once danced across Ice Age ceremonial spaces.</p>
+    </div>
+  </div>
+
+  <div class="history">
+    <h2>Copper-Reinforced Structural Keystone (PA-AE-001)</h2>
+    <figure>
+      <img src="../images/collections/copper-reinforced-keystone.png" alt="Copper-Reinforced Structural Keystone">
+      <figcaption>Image and text generated with AI (Google, OpenAI 2025).</figcaption>
+    </figure>
+    <div class="artifact-description">
+      <h3>Facts</h3>
+      <p>Recovered in 2003 from a depth of 120 meters in the Labrador Sea, this 82 × 36 × 28 cm limestone keystone challenges long-standing assumptions about construction in the Late Pleistocene. Radiocarbon analysis places its use at approximately 12,000 BP, precisely at the transition between the Ice Age and early Holocene.</p>
+      <p>The keystone was found within a submerged geological depression now mapped to cover over 4 km². Sonar imaging reveals aligned stone foundations and collapsed wall segments, indicating the existence of a large architectural complex.</p>
+
+      <h3>Technical Analysis</h3>
+      <p>The limestone block was precisely carved to redistribute pressure within an arch system, while copper alloy bands—secured at high-stress points—provided additional reinforcement. This copper alloy itself is extraordinary: metallurgical analysis revealed a unique formula containing arsenic and silver, which appears to have been deliberately engineered to resist corrosion. After more than twelve millennia underwater, the copper retains nearly 85% of its original integrity.</p>
+      <p>X-ray tomography revealed a network of geometric markings etched inside the stone. These incisions align closely with standardized measurement systems observed at the Obsidian Reef site, more than 600 kilometers away. The keystone exhibits mortise-and-tenon jointing techniques, normally associated with woodworking, but here applied with millimeter precision to stone.</p>
+
+      <h3>Interpretation</h3>
+      <p>The artifact is a compelling indication of the existence of a maritime architectural culture, dubbed the Thalassian Construct, which appears to have thrived along North America's now-submerged coasts. Preliminary models suggest the structure may have functioned as a maritime observatory or ceremonial harbor, given its orientation toward solstice points on the horizon at the time of its construction.</p>
+
+      <h3>Comparative Notes</h3>
+      <p>The construction techniques and material science knowledge demonstrated in this artifact far exceed what is typically attributed to hunter-gatherer societies of this era. The consistency in measurement systems across distant sites suggests not only advanced planning but a regionally connected culture that shared construction templates and engineering practices.</p>
+
+      <h3>Cautionary Note on Interpretation</h3>
+      <p>While the technical sophistication is undeniable, we must be careful not to project modern engineering concepts onto prehistoric builders. The true cultural significance of this maritime architecture remains partially obscured by its submersion and the lack of associated artifacts.</p>
+
+      <p class="display-courtesy">On display courtesy of the Marine Archaeology Consortium and the Labrador Heritage Foundation. This keystone stands not simply as an engineering marvel, but as a silent witness to a vanished maritime civilization whose ingenuity rivaled that of later, better-documented societies.</p>
+    </div>
+  </div>
+
+  <div class="history">
+    <h2>Tattooed Dermal Patch (PA-AN-003)</h2>
+    <figure>
+      <img src="../images/collections/tattooed-dermal-patch.png" alt="Tattooed Dermal Patch">
+      <figcaption>Image and text generated with AI (Google, OpenAI 2025).</figcaption>
+    </figure>
+    <div class="artifact-description">
+      <h3>Facts</h3>
+      <p>This artifact consists of a fragment of preserved human dermis, excavated from a permafrost deposit near the Kolyma River in northeastern Siberia. The patch measures approximately 7 by 4 centimeters and bears an intricate series of dark blue-black tattoos arranged in linear bands with repeated spiral and chevron designs.</p>
+      <p>Laboratory analysis suggests the pigment derives from soot or charcoal mixed with animal fat, a formula still echoed in traditional tattooing practices today. Radiocarbon dating places the individual at roughly 21,000 years ago, making this among the oldest direct evidence of body modification ever recovered.</p>
+
+      <h3>Interpretation</h3>
+      <p>The tattoos are not purely decorative. Their repetition and placement suggest they carried symbolic and possibly functional meaning. Spirals and chevrons are common across Ice Age iconography, often associated with cycles of life, pathways, or energy flows. One line of interpretation views the tattoos as a form of corporeal cartography—mapping constellations, migratory routes, or even bodily energy points.</p>
+      <p>Another proposes a healing or shamanic role, with markings applied to the skin as talismans to strengthen the wearer against illness or to mark them as a ritual specialist within their community.</p>
+
+      <h3>Comparative Notes</h3>
+      <p>Strikingly, the motifs on this patch echo geometric patterns observed on both the Obsidian Ritual Mask of Surnaq and the Tessellated Ice Lens. Spirals and triangles etched into artifacts recur here on skin, reinforcing the hypothesis of a shared symbolic network that spanned Ice Age Eurasia.</p>
+      <p>For present-day Indigenous communities, the Tattooed Dermal Patch resonates deeply with practices of ancestral marking. Inuit collaborators note similarities with women's chin tattoos (tunniit), which signified maturity, identity, and belonging.</p>
+
+      <h3>Cautionary Note on Interpretation</h3>
+      <p>While the tattoos clearly held cultural significance, we must be cautious about assigning specific meanings to these ancient symbols. The multiple modern interpretations demonstrate how the same markings could serve different functions in different cultural contexts.</p>
+
+      <p class="display-courtesy">On display courtesy of the Siberian Permafrost Research Institute and the Yakutia Cultural Heritage Foundation. Though small in scale, this artifact demonstrates that the human body was more than flesh—it was a living canvas of belief, power, and story.</p>
+    </div>
+  </div>
+
+  <div class="history">
+    <h2>Irradiated Mammoth Pelt (PA-AN-004)</h2>
+    <figure>
+      <img src="../images/collections/irradiated-mammoth-pelt.png" alt="Irradiated Mammoth Carcass Pelt">
+      <figcaption>Image and text generated with AI (Google, OpenAI 2025).</figcaption>
+    </figure>
+    <div class="artifact-description">
+      <h3>Facts</h3>
+      <p>This artifact is a section of mammoth hide, measuring nearly two meters across, preserved in a glacier fissure near the Yenisei River basin. The hair retains its coarse, insulating fibers but has been discolored into streaks of pale white and deep char.</p>
+      <p>Scientific testing revealed unusually high levels of radiation within the fibers, suggesting that the mammoth lived—or at least perished—in proximity to a radioactive source. This anomalous detail challenges assumptions of environmental stability during the Late Pleistocene.</p>
+
+      <h3>Interpretation</h3>
+      <p>The unusual striations and discolorations have led to two interpretive paths. One scientific explanation attributes the markings to natural mineral deposits or radiation pockets released during Ice Age tectonic activity. Another perspective views the discolorations as intentional modification by human hands.</p>
+      <p>Its sheer size and striking appearance imply use as a ceremonial cloak or altar covering, rather than simple warmth. The pelt may have been ritually exposed to fire, embers, or even mineral-treated dyes, leaving both symbolic and chemical traces.</p>
+
+      <h3>Comparative Notes</h3>
+      <p>Patterns observed on the pelt's singed sections resemble zig-zag motifs etched into the Tessellated Ice Lens. Across the Subglacial Archive collection, repeated zig-zags emerge as a visual shorthand for power unleashed—whether cosmic, geological, or spiritual.</p>
+      <p>Among Indigenous Siberian and Arctic traditions, mammoth remains often hold liminal significance, representing beings caught between the underworld and the human realm. The radiation anomaly, whether natural or engineered, deepens its mystery, hinting that mammoths were not only hunted but revered as vessels of elemental power.</p>
+
+      <h3>Cautionary Note on Interpretation</h3>
+      <p>The radiation evidence presents unique challenges for interpretation. While scientifically measurable, we must be careful not to conflate modern understandings of radiation with prehistoric perceptions of these phenomena.</p>
+
+      <p class="display-courtesy">On display courtesy of the Russian Academy of Sciences and the Evenki Cultural Preservation Society. This pelt reveals how ancient societies may have inscribed meaning directly onto the materials of their world.</p>
+    </div>
+  </div>
+
+  <div class="history">
+    <h2>Ossified Spinal Reconstruction (SKR-MD-004)</h2>
+    <figure>
+      <img src="../images/collections/ossified-spinal-reconstruction.png" alt="Ossified Spinal Reconstruction">
+      <figcaption>Image and text generated with AI (Google, OpenAI 2025).</figcaption>
+    </figure>
+    <div class="artifact-description">
+      <h3>Facts</h3>
+      <p>Found in August 2006 beneath the Vatnajökull ice sheet in Iceland, this 32.4 cm section of human spine (vertebrae C3 through T5) represents one of the most extraordinary examples of prehistoric medical intervention yet uncovered. Tentatively linked to the Skardic Reclamation Clans, a glacial-era society once thought to focus solely on subsistence.</p>
+      <p>Micro-CT scans reveal the fusion of bone with a calcified collagen matrix reinforced by mineral deposits resembling synthetic apatite. These deposits do not occur naturally in the local environment, implying intentional importation or production of bio-compatible materials.</p>
+
+      <h3>Technical Analysis</h3>
+      <p>The spinal column shows deliberate stabilization of severe vertebral trauma. Unlike degenerative ossification, the bonding follows symmetrical and patterned reinforcement at stress points, suggesting guided surgical practice rather than incidental healing.</p>
+      <p>Histological analysis indicates growth rings within the fusion, marking decades of survival post-trauma. Biomechanical modeling demonstrates the structural stability of the repair, providing a rare glimpse into how knowledge of anatomy and healing extended beyond subsistence practices.</p>
+
+      <h3>Interpretation</h3>
+      <p>This artifact speaks to more than anatomy—it reflects community values. The survival of an individual with catastrophic spinal trauma would have required care, knowledge, and sustained social investment. Rather than abandoning the injured, the Skardic Clans appear to have cultivated resilience through collective healing practices.</p>
+      <p>A carved stone medallion recovered nearby bears faint symmetrical motifs. Some scholars interpret this as a ritual marker associated with the healing process, while others view it as a symbolic identifier for the medical practitioner.</p>
+
+      <h3>Comparative Notes</h3>
+      <p>Parallels with modified bear femurs at the Glacier Tooth Site suggest a broader cultural network of biomedical experimentation, raising the possibility of specialized healers within Skardic society. This pushes the boundaries of what we understand about Ice Age knowledge systems.</p>
+
+      <h3>Cautionary Note on Interpretation</h3>
+      <p>While the medical intervention is evident, we must be cautious about labeling this as "surgery" in the modern sense. The techniques may have combined practical knowledge with ritual practices we don't fully understand.</p>
+
+      <p class="display-courtesy">On display courtesy of the Icelandic Heritage Museum and the Nordic Archaeological Foundation. In display, the specimen is paired with interactive overlays that simulate nerve regeneration and stress distribution across the reconstructed spine.</p>
+    </div>
+  </div>
+</section>
+
+<div class="modal-item" id="modal-text-lens" hidden>
+  <h2 id="modal-title">Tesselated Ice Lens — Collection Note</h2>
+  <p>
+    Discovered 3.2 km beneath the Jakobshavn Glacier, this silica-crystal lens embedded with copper-gold nanofilaments represents a startlingly advanced optical device from the Last Glacial Maximum. When illuminated, its refracted light projects geometric constellations, suggesting use as a celestial navigation tool or ritual observational instrument. The uncorroded filaments, arranged in precise patterns resembling nanoscale circuitry, imply a sophisticated understanding of materials science—possibly exploiting Greenland’s rare native copper deposits.
+    <br>
+    <br>
+    The lens’s spectral patterns directly correlate with motifs on the Obsidian Ritual Mask of Surnaq (PA-AR-002), hinting at a shared symbolic language across Arctic cultures. Its pristine condition, preserved in deep glacial ice, indicates deliberate deposition, possibly as part of a cosmological offering or shamanic toolkit.
+    <br>
+    <br>
+    <strong>Curatorial Note:</strong> Displayed in a light-controlled chamber, the lens’s star map projections are juxtaposed with Inuit oral traditions of celestial navigation. Ongoing experiments seek to replicate its optical properties using period-appropriate materials.
+  </p>
+</div>
+
+<div class="modal-item" id="modal-text-mask" hidden>
+  <h2 id="modal-title">Obsidian Ritual Mask of Surnaq — Collection Note</h2>
+  <p>
+    Recovered from an ice-sealed Nunavut cave, this mirror-polished obsidian mask embodies the spiritual ingenuity of the proto-Arctic Surnaq people. Its geometric etchings, inlaid with mammoth bone and mother-of-pearl, refract light in patterns identical to the Tessellated Ice Lens—suggesting a shared "optics-based" ritual system spanning 2,500 km of Ice Age tundra. The mask’s lack of wear implies it was ceremonially significant but rarely worn, perhaps reserved for solstice rites or vision quests.
+    <br>
+    <br>
+    Found near human remains and cave pigments, it may have served as a portal for ancestral communication, with its reflective surface symbolizing thresholds between worlds. The precision carving—achieved without metal tools—reveals mastery of obsidian fracturing techniques.
+    <br>
+    <br>
+    <strong>Curatorial Note:</strong> Exhibited alongside 3D-mapped light refraction studies, the display explores how its optical properties interact with firelight and Arctic twilight. Replicas allow tactile engagement with its impossible smoothness.
+    <br>
+    <br>
+    <strong>Thematic Link:</strong> Both artifacts challenge assumptions about Ice Age "technology," framing light manipulation as a unifying cultural practice across the Pleistocene Arctic.
+  </p>
+</div>
+
+<div class="modal-item" id="modal-text-keystone" hidden>
+  <h2 id="modal-title">Copper-Reinforced Structural Keystone — Collection Note</h2>
+  <p>
+    This remarkably preserved architectural element, recovered from the Labrador Sea at a depth of 120 meters, challenges conventional timelines of pre-Columbian engineering. The sedimentary limestone core, reinforced with copper alloy bands and pitch-based adhesive, exhibits unusually advanced anti-corrosive properties—suggesting either a lost metallurgical technique or possible material sourcing from an as-yet-unidentified deposit. X-ray tomography revealed precise geometric grooving on interior surfaces, likely serving as alignment markers for large-scale construction.
+    <br>
+    <br>
+    The mortise-and-tenon joints mirror those found at the Obsidian Reef Excavation, reinforcing connections to the hypothesized Thalassian Construct—a maritime culture capable of subterranean or submerged stone architecture. The keystone’s design implies sophisticated knowledge of load-bearing mechanics, possibly supporting a vaulted dome or ceremonial chamber. Its discovery in deep waters raises questions about coastal subsidence or deliberate underwater construction.
+    <br>
+    <br>
+    <strong>Curatorial Note:</strong> Displayed alongside a 3D reconstruction of its probable architectural context, this artifact invites visitors to reconsider the technological capabilities of ancient seafaring societies. Comparative studies with Mediterranean and Mesoamerican vaulting techniques are ongoing.  
+  </p>
+</div>
+
+<div class="modal-item" id="modal-text-pelt" hidden>
+  <h2 id="modal-title">Irradiated Mammoth Carcass Pelt — Collection Note</h2>
+  <p>
+    This partially preserved mammoth hide, discovered in East Antarctica’s glacial shelves, bears intricate spiral and radial burn patterns that eerily echo the Tattooed Dermal Patch from Siberia. The pelt emits low-level gamma radiation of unknown origin—a phenomenon that has resisted replication in modern labs. Laser inscription mapping confirms the markings were deliberately scorched, possibly in a ritualistic or astronomical context.
+    <br>
+    <br>
+    The Orolithic Beastmasters, a speculative culture proposed to have practiced human-animal symbiosis, may have used such pelts in ceremonial displays or mythic storytelling. The constellation-like patterning suggests possible cosmological encoding, though whether it represents star maps, clan sigils, or spiritual wards remains debated.
+    <br>
+    <br>
+    <strong>Curatorial Note:</strong> Exhibited under radiation-safe shielding, the display includes an interactive hologram allowing visitors to explore the pelt’s symbolic motifs in relation to other circumpolar artifacts.  
+  </p>
+</div>
+
+<div class="modal-item" id="modal-text-tattoo" hidden>
+  <h2 id="modal-title">Tattooed Dermal Patch — Collection Note</h2>
+  <p>
+    This rare fragment of human epidermal and dermal tissue preserves a multilayered lattice of metallic and plant-based inks, faintly fluorescent under infrared and near-UV light. Excavated from a permafrost-sealed burial chamber along the Kara Sea, its anaerobic and sub-zero context (-12°C) has maintained remarkable structural integrity, revealing interlaced spiral nodes and animal glyphs. These motifs correspond closely to markings on the Irradiated Mammoth Pelt and obsidian blade handles recovered from the same region, suggesting a shared symbolic language within what researchers hypothesize as a Boreal Shamanic Network across northern glacial territories.
+    <br>
+    <br>
+    The patch may have functioned as a personal identifier, possibly indicating rank, ritual role, or proto-data encoding; its layered design implies intentional complexity rather than purely decorative use. Associated finds, including pottery fragments and human hair, situate it firmly within a funerary or ceremonial context, though precise meanings remain uncertain.
+    <br>
+    <br>
+    Comparative myth mapping across twelve linguistic regions shows parallels in spiral and animal iconography, hinting at early networks of cultural exchange, though interpretations remain provisional. This artifact offers a rare glimpse into intimate personal expression and the symbolic systems of Late Pleistocene communities in Siberia.
+  </p>
+</div>
+
+<div class="modal-item" id="modal-text-spine" hidden>
+  <h2 id="modal-title">Ossified Spinal Reconstruction — Collection Note</h2>
+  <p>
+    Discovered in a subglacial trench beneath Vatnajökull, this fused spinal column (C3-T5) provides startling evidence of advanced surgical intervention in a glacial-era individual. Micro-CT scans reveal engineered mineral deposits resembling synthetic apatite, a material not naturally occurring in the region. Histological analysis indicates the subject survived for decades post-surgery, with bone growth suggesting guided ossification techniques.
+    <br>
+    <br>
+    The nearby carved stone medallion hints at possible ritual or medicinal significance, linking the individual to the Skardic Reclamation Clans—a group known for modified bear femurs exhibiting similar healing patterns. The fusion material’s properties imply knowledge of biocompatible ceramics, raising profound questions about lost medical traditions.
+    <br>
+    <br>
+    <strong>Curatorial Note:</strong> The display features interactive biomechanical models reconstructing the individual’s mobility, alongside comparative examples of ancient surgical practices worldwide.
+  </p>
+</div>
+
+</main>
+
+  <div class="modal" id="modal" style="display:none" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close">x</button>
+      <div id="modal-body"></div> <!-- text gets injected inside the div-->
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bottom-banner">
@@ -260,6 +512,45 @@
     sections.forEach(s => s.style.display = 'none');
     document.getElementById(section).style.display = 'block';
   }
+
+  (function(){
+  const modal      = document.getElementById('modal');
+  const modalBody  = document.getElementById('modal-body');
+  const closeBtn   = modal.querySelector('.close-modal');
+  let lastTrigger  = null;
+
+  function openFrom(selector, trigger){
+    const src = document.querySelector(selector);
+    if (!src) { console.warn('Missing modal content:', selector); return; }
+    modalBody.innerHTML = src.innerHTML;        // inject text HTML
+    modal.style.display = 'block';
+    lastTrigger = trigger || null;
+    closeBtn.focus();
+    document.body.style.overflow = 'hidden';    // no scroll under modal
+  }
+
+  function closeModal(){
+    modal.style.display = 'none';
+    modalBody.innerHTML = '';
+    document.body.style.overflow = '';
+    if (lastTrigger) lastTrigger.focus();
+  }
+
+  // open on any element with data-modal-target
+  document.addEventListener('click', (e)=>{
+    const trigger = e.target.closest('[data-modal-target]');
+    if (trigger){
+      e.preventDefault();
+      openFrom(trigger.getAttribute('data-modal-target'), trigger);
+      return;
+    }
+    if (e.target === modal || e.target.closest('.close-modal')) closeModal();
+  });
+
+  document.addEventListener('keydown', (e)=>{
+    if (e.key === 'Escape' && modal.style.display === 'block') closeModal();
+  });
+})();
 </script>
 </body>
 </html>

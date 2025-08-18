@@ -211,7 +211,7 @@ body {
   background-color: #092f6d;
 }
 
-#archaeology, #anthropology, #assemblages {
+#archaeology, #anthropology, #assemblages, #histories {
   background: linear-gradient(to right, #f0f4f8, #2c497aa6);
   margin: 1.5rem auto;
   padding: 1rem;
@@ -220,14 +220,14 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-#archaeology h1, #anthropology h1, #assemblages h1 {
+#archaeology h1, #anthropology h1, #assemblages h1, #histories h1 {
   text-align: left;
   color: #2c497a;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
-#archaeology h2, #anthropology h2, #assemblages h2 {
+#archaeology h2, #anthropology h2, #assemblages h2, #histories h2 {
   text-align: center;
   color: #0b3d91;
   margin-bottom: 1rem;
@@ -256,6 +256,36 @@ body {
 }
 
 .collection-item figcaption {
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+.modal{
+  background: linear-gradient(to right, #f0f4f8, #2c497aa6);
+}
+
+.modal h2{
+  color: #0b3d91;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.history figure {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.history img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.history figcaption {
   font-size: 0.8rem;
   color: #666;
   font-style: italic;
