@@ -443,3 +443,108 @@ body {
   cursor: pointer;
   color: #444;
 }
+
+/* CART PAGE SPECIFIC STYLES */
+.cart-container {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 16px;
+    background: linear-gradient(to right, #f0f4f8, #2c497aa6);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-controls {
+    margin: 16px 0;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+}
+
+.cart-controls label {
+    font-weight: bold;
+    color: #0b3d91;
+}
+
+.cart-empty {
+    padding: 12px;
+    border: 1px dashed #666;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+}
+
+.cart-summary {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 12px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    font-variant-numeric: tabular-nums; /* fixed-width numbers */
+}
+
+.cart-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.cart-actions button, 
+.cart-actions a {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #0b3d91;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cart-actions button:hover, 
+.cart-actions a:hover {
+    background-color: #092f6d;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between; /* name left, price+button right */
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+}
+
+.cart-item span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item span.price {
+    font-variant-numeric: tabular-nums; 
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.cart-item button {
+    padding: 6px 12px;
+    background-color: #a12c2c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.cart-item button:hover {
+    background-color: #7a1f1f;
+}

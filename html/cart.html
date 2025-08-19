@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mason Wachter">  
+  <meta name="robots" content="noindex, nofollow">
+  <title>The Preglacial Archive - Shopping Cart</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="top-banner">
+  <h1>The Preglacial Archive - Shop</h1>
+  <div class="nav-buttons">
+    <button onclick="location.href='../index.html'">Home</button>
+    <button onclick="location.href='staff.html'">Staff</button>
+    <button onclick="location.href='collections.html'">Collections</button>
+    <button onclick="location.href='shop.html'">Shop</button>
+    <button onclick="location.href='cart.html'" id="viewCartBtn">View Cart</button> 
+  </div>
+</header>
+
+  <main class="cart-container">
+    <!-- NEW CONTROLS (Cart page only) -->
+    <div class="cart-controls">
+      <label><input type="checkbox" id="memberToggle"> Member Discount (15%)</label>
+    </div>
+
+    <!-- STATES & OUTPUT AREAS -->
+    <div id="emptyMsg" class="cart-empty" hidden>Your cart is empty.</div>
+    <div id="items" class="cart-items" hidden></div>
+    <pre id="summary" class="cart-summary" hidden></pre>
+
+    <!-- BASIC ACTIONS -->
+    <div class="cart-actions">
+      <button id="clearBtn">Clear Cart</button>
+      <a href="shop.html">Keep Shopping</a>
+    </div>
+  </main>
+
+<script src="../js/javascript.js"></script>
+</body>
+</html>
