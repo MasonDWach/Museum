@@ -99,6 +99,11 @@ function render() {
 
     // Load cart, filter out qty=0 or price=0
     let cart = readCart().filter(item => item.qty > 0 && item.unitPrice > 0);
+    
+    const countElem = document.getElementById('cartCount');
+    if (countElem) {
+        countElem.textContent = cart.reduce((sum, item) => sum + item.qty, 0);
+    }
 
     if (cart.length === 0) {
         itemsDiv.hidden = true;
@@ -139,6 +144,16 @@ function render() {
     }
 
     const shipping = SHIPPING_RATE;
+    const FREE_SHIPPING_THRESHOLD = 150; // adjust as needed
+    let shippingDisplay = money(shipping); // default display
+    let freeShippingBadge = '';
+
+    // If eligible, show badge
+    if (itemTotal >= FREE_SHIPPING_THRESHOLD) {
+        freeShippingBadge = ' — You qualify for free shipping!';
+        shippingDisplay = '$0.00'; // optional display only
+    }
+
     const subtotalTaxable = itemTotal - appliedMember - appliedVolume + shipping;
     const taxAmount = subtotalTaxable * TAX_RATE;
     const invoiceTotal = subtotalTaxable + taxAmount;
@@ -162,7 +177,7 @@ function render() {
         Subtotal of Items:    ${money(itemTotal)}
         Volume Discount:      ${money(-appliedVolume)}
         Member Discount:      ${money(-appliedMember)}
-        Shipping:             ${money(shipping)}
+        Shipping:             ${shippingDisplay}${freeShippingBadge}
         Subtotal (Taxable):   ${money(subtotalTaxable)}
         Tax Rate %:           ${(TAX_RATE*100).toFixed(1)}%
         Tax Amount $:         ${money(taxAmount)}
