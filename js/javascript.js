@@ -144,14 +144,13 @@ function render() {
     }
 
     const shipping = SHIPPING_RATE;
-    const FREE_SHIPPING_THRESHOLD = 150; // adjust as needed
-    let shippingDisplay = money(shipping); // default display
+    const FREE_SHIPPING_THRESHOLD = 150;
+    let shippingDisplay = money(shipping);
     let freeShippingBadge = '';
 
-    // If eligible, show badge
     if (itemTotal >= FREE_SHIPPING_THRESHOLD) {
         freeShippingBadge = ' — You qualify for free shipping!';
-        shippingDisplay = '$0.00'; // optional display only
+        shippingDisplay = '$0.00';
     }
 
     const subtotalTaxable = itemTotal - appliedMember - appliedVolume + shipping;
